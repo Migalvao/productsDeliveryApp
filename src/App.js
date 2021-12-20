@@ -16,7 +16,8 @@ const App = () => {
   const token = localStorage.getItem("token");
   let user;
 
-  axios.defaults.baseURL = "http://192.168.0.101:8000/";
+  axios.defaults.baseURL =
+    "http://merd-env.eba-gfbriayj.us-east-1.elasticbeanstalk.com/";
   // axios.defaults.baseURL = "http://localhost:8000/";
   axios.defaults.headers.common["Token"] = token;
 
